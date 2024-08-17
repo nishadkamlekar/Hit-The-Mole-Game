@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay loop><source src="Spring.mp3" type="audio/mp3"></audio>
+    
+    <img src="button.png" class="container button" onclick="toggleMenu()">
+<div class="new" id="submenu">
+    <div class="easy" ><a href="/easy/index.html">EASY</a></div>
+    <div class="hard"><a href="/hard/index.html">HARD</a></div>  
+</div>
+<script>
+
+    let submenu = document.getElementById("submenu");
+    function toggleMenu(){
+        
+        submenu.classList.toggle("open");
+    }
+</script>
+</body>
+</html>
